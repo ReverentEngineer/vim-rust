@@ -1,0 +1,14 @@
+*rust.txt* A Rust wrapper
+
+Author: Jeff Caffrey-Hill <https://jeff.caffreyhill.com/>
+License: MIT License
+
+INTRODUCTION				*rust*
+
+Whenever you are in a Rust project, a set of commands are enabled to allow you to run basic commands and the rust build wrapper is set for the |makeprg|.
+
+COMMANDS				*rust-commands*
+
+					*:Cargo*
+:Cargo [args]		Run an arbitrary cargo command using as well as
+      |g:cargo_args| to the command.
