@@ -12,3 +12,8 @@ COMMANDS				*rust-commands*
 					*:Cargo*
 :Cargo [args]		Run an arbitrary cargo command using as well as
       |g:cargo_args| to the command.
+
+
+					*:RustFileVec*
+:RustFileVec [file]		Embeds a file as a Rust Vec at the current
+      cursor postion.

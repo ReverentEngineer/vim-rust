@@ -18,3 +18,10 @@ function! rust#cargo(...) abort
 		execute "".cargo_command.""
 	endif
 endfunction
+
+function! rust#file_to_vec(file) abort
+  let hex = system("tr -d '\n'", system("xxd -g 0 -p ".a:file))
+	let hex = substitute(hex, '\([0-9a-f][0-9a-f]\)', '0x\1, ', "g")
+	let line = "let ".a:file." = Vec::from([".hex."]);"
+	exe "normal! a".line."\<Esc>"
+endfunction
